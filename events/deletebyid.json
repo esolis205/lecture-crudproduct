@@ -1,0 +1,79 @@
+{
+    "resource": "/product/{id}",
+    "path": "/product/1",
+    "httpMethod": "DELETE",
+    "headers": {
+        "Accept": "*/*",
+        "accept-encoding": "gzip, deflate, br",
+        "Host": "2qpiya0z35.execute-api.us-west-2.amazonaws.com",
+        "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+        "X-Amzn-Trace-Id": "Root=1-635720d6-029538505e8b5f5f0aeba796",
+        "X-Forwarded-For": "71.197.142.199",
+        "X-Forwarded-Port": "443",
+        "X-Forwarded-Proto": "https"
+    },
+    "multiValueHeaders": {
+        "Accept": [
+            "*/*"
+        ],
+        "accept-encoding": [
+            "gzip, deflate, br"
+        ],
+        "Host": [
+            "2qpiya0z35.execute-api.us-west-2.amazonaws.com"
+        ],
+        "User-Agent": [
+            "Thunder Client (https://www.thunderclient.com)"
+        ],
+        "X-Amzn-Trace-Id": [
+            "Root=1-635720d6-029538505e8b5f5f0aeba796"
+        ],
+        "X-Forwarded-For": [
+            "71.197.142.199"
+        ],
+        "X-Forwarded-Port": [
+            "443"
+        ],
+        "X-Forwarded-Proto": [
+            "https"
+        ]
+    },
+    "queryStringParameters": null,
+    "multiValueQueryStringParameters": null,
+    "pathParameters": {
+        "id": "1"
+    },
+    "stageVariables": null,
+    "requestContext": {
+        "resourceId": "gzo3nr",
+        "resourcePath": "/product/{id}",
+        "httpMethod": "DELETE",
+        "extendedRequestId": "aiIRnFeKvHcF2fg=",
+        "requestTime": "24/Oct/2022:23:33:42 +0000",
+        "path": "/prod/product/1",
+        "accountId": "012527159549",
+        "protocol": "HTTP/1.1",
+        "stage": "prod",
+        "domainPrefix": "2qpiya0z35",
+        "requestTimeEpoch": 1666654422945,
+        "requestId": "962f29b0-4aa7-420f-958f-2e2a4a965d98",
+        "identity": {
+            "cognitoIdentityPoolId": null,
+            "accountId": null,
+            "cognitoIdentityId": null,
+            "caller": null,
+            "sourceIp": "71.197.142.199",
+            "principalOrgId": null,
+            "accessKey": null,
+            "cognitoAuthenticationType": null,
+            "cognitoAuthenticationProvider": null,
+            "userArn": null,
+            "userAgent": "Thunder Client (https://www.thunderclient.com)",
+            "user": null
+        },
+        "domainName": "2qpiya0z35.execute-api.us-west-2.amazonaws.com",
+        "apiId": "2qpiya0z35"
+    },
+    "body": null,
+    "isBase64Encoded": false
+}

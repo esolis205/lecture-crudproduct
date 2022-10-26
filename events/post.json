@@ -1,0 +1,81 @@
+{
+    "resource": "/product",
+    "path": "/product",
+    "httpMethod": "POST",
+    "headers": {
+        "Accept": "*/*",
+        "accept-encoding": "gzip, deflate, br",
+        "Content-Type": "application/json",
+        "Host": "2qpiya0z35.execute-api.us-west-2.amazonaws.com",
+        "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+        "X-Amzn-Trace-Id": "Root=1-63572008-5a328d455dc0ac79409876f0",
+        "X-Forwarded-For": "71.197.142.199",
+        "X-Forwarded-Port": "443",
+        "X-Forwarded-Proto": "https"
+    },
+    "multiValueHeaders": {
+        "Accept": [
+            "*/*"
+        ],
+        "accept-encoding": [
+            "gzip, deflate, br"
+        ],
+        "Content-Type": [
+            "application/json"
+        ],
+        "Host": [
+            "2qpiya0z35.execute-api.us-west-2.amazonaws.com"
+        ],
+        "User-Agent": [
+            "Thunder Client (https://www.thunderclient.com)"
+        ],
+        "X-Amzn-Trace-Id": [
+            "Root=1-63572008-5a328d455dc0ac79409876f0"
+        ],
+        "X-Forwarded-For": [
+            "71.197.142.199"
+        ],
+        "X-Forwarded-Port": [
+            "443"
+        ],
+        "X-Forwarded-Proto": [
+            "https"
+        ]
+    },
+    "queryStringParameters": null,
+    "multiValueQueryStringParameters": null,
+    "pathParameters": null,
+    "stageVariables": null,
+    "requestContext": {
+        "resourceId": "p4uduo",
+        "resourcePath": "/product",
+        "httpMethod": "POST",
+        "extendedRequestId": "aiHxYFT2PHcFTFA=",
+        "requestTime": "24/Oct/2022:23:30:16 +0000",
+        "path": "/prod/product",
+        "accountId": "012527159549",
+        "protocol": "HTTP/1.1",
+        "stage": "prod",
+        "domainPrefix": "2qpiya0z35",
+        "requestTimeEpoch": 1666654216648,
+        "requestId": "222bbd31-4e1f-4cfd-8e8b-845163b6d582",
+        "identity": {
+            "cognitoIdentityPoolId": null,
+            "accountId": null,
+            "cognitoIdentityId": null,
+            "caller": null,
+            "sourceIp": "71.197.142.199",
+            "principalOrgId": null,
+            "accessKey": null,
+            "cognitoAuthenticationType": null,
+            "cognitoAuthenticationProvider": null,
+            "userArn": null,
+            "userAgent": "Thunder Client (https://www.thunderclient.com)",
+            "user": null
+        },
+        "domainName": "2qpiya0z35.execute-api.us-west-2.amazonaws.com",
+        "apiId": "2qpiya0z35"
+    },
+    "body": "{\n  \"id\": 1,\n  \"name\": \"IPhone\",\n  \"price\": 900\n}",
+    "isBase64Encoded": false
+}
