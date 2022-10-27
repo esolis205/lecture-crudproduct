@@ -1,0 +1,21 @@
+{
+    "message": "Successfully finished operation: \"GET\"",
+    "body": [
+      {
+        "category": "Lady",
+        "description": "The best person ever.",
+        "id": "5b09e387-33bb-4d24-beb0-2f346e546b57",
+        "price": 9500000,
+        "name": "Aleera",
+        "imageFile": "product-1.png"
+      },
+      {
+        "category": "Phone",
+        "description": "This phone offers the biggest change, the company has seen in years.",
+        "id": "6dc9c2ba-e8f6-45b4-898c-a88f118bd879",
+        "price": 950.4,
+        "name": "IPhone X",
+        "imageFile": "product-1.png"
+      }
+    ]
+  }

@@ -13,16 +13,17 @@ export const handler = async function(event) {
     let body;
     try {
         switch (event.httpMethod) {
-            case GET:
+            case GET: {
                 if (event.queryStringParameters != null){
                     body = await getProductsByCategory(event);
                 }
                 else if(event.pathParameters != null){
                     body = await getProduct(event.pathParameters.id);
                 } 
-                 else {
-                    body = await getAllProducts();
+                else {
+                    body = await getAllProducts(event);
                 }
+            }
                 break;
             case POST:
                 body = await createProduct(event)
@@ -72,17 +73,17 @@ const getProduct = async (productId) => {
             Key: marshall({ id: productId })
         };
 
-        const { item } = await ddbClient.send(new GetItemCommand(params));
+        const { Item } = await ddbClient.send(new GetItemCommand(params));
 
-        console.log(item);
-        return (item) ? unmarshall(item) : {};
+        console.log(Item);  
+        return (Item) ? unmarshall(Item) : {};
     } catch (e) {
         console.error(e);
         throw e;
     }
 }
 
-const getAllProducts = async () => {
+const getAllProducts = async (productId) => {
     console.log("getAllProducts")
 
     try {
@@ -162,7 +163,7 @@ const updateProduct = async (event) => {
             UpdateExpression: `Set ${objKeys.map((_, index) => `#key${index} = :value${index}`).join()}`,
             ExpressionAttributeNames: objKeys.reduce((acc, key, index) => ({
                 ...acc,
-                [`:value${index}`]: requestBody[key]
+                [`#key${index}`]: key
             }), {}),
             ExpressionAttributeValues: marshall(objKeys.reduce((acc, key, index) => ({
                 ...acc,
@@ -172,7 +173,7 @@ const updateProduct = async (event) => {
         const updateResult = await ddbClient.send(new UpdateItemCommand(params));
 
         console.log(updateResult);
-        return updateResult;
+        return (updateResult) ? unmarshall(updateResult) : {};
     } catch (e) {
         console.error(e)
         throw e;
